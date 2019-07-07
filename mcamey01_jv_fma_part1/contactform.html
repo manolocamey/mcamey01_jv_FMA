@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DCSIS JavaScript Module FMA</title>
+<link rel="stylesheet" href="diabetestool.css">
+<script src="contactform.js" defer></script>
+</head>
+
+<body>
+<section class="contact">
+  <form name="contact" action="#">
+    <fieldset>
+      <label>First Name</label>
+      <input type="text"   name="fname" >
+      <span class="fname">You must enter a valid first name</span>
+    </fieldset>
+    <fieldset >
+      <label>Last Name</label>
+      <input type="text"  name="lname">
+      <span class="lname" >You must enter a valid last name</span>
+    </fieldset>
+    <fieldset>
+      <label>Ttile</label>
+      <select  name="title">
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+        <option value="Master">Master</option>
+      </select>
+      <span class="title" >You must enter a valid title</span>
+    </fieldset>
+    <fieldset>
+      <label>Health Authority Number</label>
+      <input type="text"  name="han">
+      <span class="han" >You must enter a valid Health Authority Number</span>
+    </fieldset>
+    <fieldset>
+      <label>Email</label>
+      <input type="text"  name="email">
+      <span class="email">You must enter a valid email address</span>
+    </fieldset>
+    <fieldset>
+      <label>Telephone Number</label>
+      <input type="text"  name="phone">
+      <span class="phone" >You must enter a valid telephone number</span>
+    </fieldset>
+    <button type="button" id="submitBtn">Submit</button>
+  </form>
+</section>
+</body>
+</html>

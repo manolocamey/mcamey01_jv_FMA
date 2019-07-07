@@ -1,0 +1,93 @@
+html, body, h1, h2, h3, h4, h5, h6, p, span, blockquote, figure, figcaption, picture, caption ol, ul, li {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+}
+
+form{
+    border: solid 0.5px #c5c5c5;
+    margin: 20px;
+    background: #ffffff; 
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); 
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); 
+    background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); 
+}
+
+fieldset{
+    padding: 20px;
+    border: none;
+}
+fieldset span{
+    display: none;
+    color: red;
+}
+
+legend{
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.risk_assesment label{
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+.contact label{
+    display: inline-block;
+    width: 120px;
+}
+input[type="radio"] {
+    width: 20px;
+}
+input[type="text"]{
+    border:1px solid #bfbfbf;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+}
+select{
+    background: #fff;
+    width: 200px;
+    height: 34px;
+}
+button{
+    margin: 40px 20px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    border: 0.5px solid #b5b5b5;
+    background: #ffffff; 
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); 
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); 
+    background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); 
+
+}
+#low, #medium, #high{
+    display: none;
+    padding: 20px;
+    border: solid 0.5px #c5c5c5;
+    margin: 20px;
+    background: #ffffff; 
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eaeaea 100%); 
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eaeaea 100%); 
+    background: linear-gradient(to bottom,  #ffffff 0%,#eaeaea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaeaea',GradientType=0 ); 
+}
+#low h2, #medium h2, #high h2{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+#mainRiskOne, #mainRiskTwo{
+    font-weight: 600;
+    color: navy;
+}
+h2.hidden{
+    display: none;
+}

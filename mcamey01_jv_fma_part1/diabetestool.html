@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Module FMA</title>
+<link rel="stylesheet" href="diabetestool.css">
+<script src="diabetestool.js" defer></script>
+</head>
+
+<body>
+	<section class="risk_assesment">
+      <h2 class="hidden">hidden</h2>
+         <form action="#">
+               <fieldset id="age">
+                <legend>How old are you?</legend>
+                <label>1-25</label>
+                <input type="radio" value="0" name="age" checked>
+                <label>26-40</label>
+                <input type="radio" value="5" name="age">
+                <label >41-60</label>
+                <input type="radio" value="8" name="age">
+                <label >60+</label>
+                <input type="radio" value="10" name="age">
+               </fieldset>
+               <fieldset id="bmi">
+                <legend>What is your BMI?</legend>
+                <label>0-25</label>
+                <input type="radio" value="0" name="bmi" checked>
+                <label>26-30</label>
+                <input type="radio" value="0" name="bmi">
+                <label>31-35</label>
+                <input type="radio" value="9" name="bmi">
+                <label>35+</label>
+                <input type="radio" value="10" name="bmi">
+               </fieldset>
+               <fieldset id="diabetes">
+                <legend>Does anybody in your family have diabetes?</legend>
+                <label>No</label>
+                <input type="radio" value="0" name="diabetes" checked>
+                <label>Grandparent</label>
+                <input type="radio" value="7" name="diabetes">
+                <label>Sibling</label>
+                <input type="radio" value="15" name="diabetes">
+                <label>Parent</label>
+                <input type="radio" value="15" name="diabetes">
+               </fieldset>
+               <fieldset id="diet">
+                <legend>How would you describe your diet?</legend>
+                <label>Low sugar</label>
+                <input type="radio" value="0" name="diet" checked>
+                <label>Normal sugar</label>
+                <input type="radio" value="0" name="diet">
+                <label>Quite high sugar?</label>
+                <input type="radio" value="7" name="diet">
+                <label>High sugar</label>
+                <input type="radio" value="10" name="diet">
+               </fieldset>
+               <button type="button" id="submitBtn">Calculate</button>
+             </form>
+   </section>
+   <section id="message">
+      <h2 class="hidden">hidden</h2>
+      <section id="low">
+         <h2>Your Result</h2>
+         <p>Your results show that you currently have a low risk of developing diabetes. However, it is important that you maintain a healthy lifestyle in terms of diet and exercise. </p>
+      </section>
+      <section id="medium">
+         <h2>Your Result</h2>
+         <p>Your results show that you currently have a medium risk of developing diabetes. For more information on your risk factors, and what to do about them, please visit our diabetes advice website at <a href="http://www.zha.org.zd" target="black">www.zha.org.zd</a>.</p>
+      </section>
+      <section id="high">
+         <h2>Your Result</h2>
+         <p>Your results show that you currently have a HIGH risk of developing diabetes. Your main risk factors are <span id="mainRisks"></span>. We advise that you contact the Health Authority to discuss your risk factors as soon as you can. Please fill in our contact form and a member of the Health Authority Diabetes Team will be in contact with you. </p>
+      </section>
+   </section>
+</body>
+</html>
