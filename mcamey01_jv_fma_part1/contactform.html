@@ -10,44 +10,50 @@
 
 <body>
 <section class="contact">
+  <h2 class="hidden">Contact Form</h2>
   <form name="contact" action="#">
     <fieldset>
       <label>First Name</label>
-      <input type="text"   name="fname" >
-      <span class="fname">You must enter a valid first name</span>
+      <input type="text" id="FirstName">
+      <span id="FirstNameError" class="error"></span>
     </fieldset>
     <fieldset >
       <label>Last Name</label>
-      <input type="text"  name="lname">
-      <span class="lname" >You must enter a valid last name</span>
+      <input type="text" id="LastName">
+      <span id="LastNameError" class="error"></span>
     </fieldset>
     <fieldset>
       <label>Ttile</label>
-      <select  name="title">
+      <select  id="Title">
+        <option value=0>Select One</option>
         <option value="Mr">Mr</option>
         <option value="Ms">Ms</option>
         <option value="Mrs">Mrs</option>
         <option value="Miss">Miss</option>
         <option value="Master">Master</option>
       </select>
-      <span class="title" >You must enter a valid title</span>
+      <span id="TitleError" class="error"></span>
     </fieldset>
-    <fieldset>
+    <fieldset> 
       <label>Health Authority Number</label>
-      <input type="text"  name="han">
-      <span class="han" >You must enter a valid Health Authority Number</span>
+      <input type="text" id="Han">
+      <div class="question" id="mark"><div>
+          <div class="tooltipBox" id="tooltip">If you do not know your ZHA number, please contact your GP</div>
+       </div></div> 
+      <span id="HanError" class="error"></span>
     </fieldset>
     <fieldset>
       <label>Email</label>
-      <input type="text"  name="email">
-      <span class="email">You must enter a valid email address</span>
+      <input type="text" id="Email">
+      <span id="EmailError" class="error"></span>
     </fieldset>
     <fieldset>
       <label>Telephone Number</label>
-      <input type="text"  name="phone">
-      <span class="phone" >You must enter a valid telephone number</span>
+      <input type="text" id="Phone">
+      <span id="PhoneError" class="error"></span>
     </fieldset>
     <button type="button" id="submitBtn">Submit</button>
+    <span id="onclickError" class="error"></span>
   </form>
 </section>
 </body>
