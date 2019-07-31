@@ -1,11 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="utf-8">
-   <title>DCSIS JavaScript Module FMA</title>
-   <link rel="stylesheet" href="contactform_jq.css">
-   <script src="contactform_jq.js"></script>
+	<meta charset="utf-8">
+  <title>DCSIS JavaScript Module FMA</title>
+  <link rel="stylesheet" href="../mcamey01_jv_fma_part1/diabetestool.css">
+	<script src="lib/jquery.js"></script>
+	<script src="dist/jquery.validate.js"></script>
+	<script src="contactform_jq.js"></script>
 </head>
 <body>
+<section class="contact">
+  <h2 class="hidden">Contact Form</h2>
+  <form id="contact" name="contact" method="get" action="#">
+    <fieldset>
+      <label>First Name</label>
+      <input type="text" id="FirstName" name="FirstName">
+    </fieldset>
+    <fieldset >
+      <label>Last Name</label>
+      <input type="text" id="LastName" name="LastName">
+    </fieldset>
+    <fieldset>
+      <label>Title</label>
+      <select  id="Title" name="Title">
+        <option value="">Select One</option>
+        <option value="Mr">Mr</option>
+        <option value="Ms">Ms</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Miss">Miss</option>
+        <option value="Master">Master</option>
+      </select>
+    </fieldset>
+    <fieldset> 
+      <label>Health Authority Number</label>
+      <input type="text" id="Han" name="Han">
+      <div class="question" id="mark"><div>
+          <div class="tooltipBox" id="tooltip">If you do not know your ZHA number, please contact your GP</div>
+       </div></div> 
+    </fieldset>
+    <fieldset>
+      <label>Email</label>
+      <input type="text" id="Email" name="Email">
+    </fieldset>
+    <fieldset>
+      <label>Telephone Number</label>
+      <input type="text" id="Phone" name="Phone">
+    </fieldset>
+    <input class="submit" type="submit" value="Submit">
+  </form>
+</section>
 </body>
 </html>

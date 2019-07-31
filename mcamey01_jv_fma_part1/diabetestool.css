@@ -8,7 +8,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.82em;
 }
-
+p{
+    line-height: 28px;
+}
 form{
     border: solid 0.5px #c5c5c5;
     margin: 20px;
@@ -26,7 +28,18 @@ fieldset{
 span.error{
     color: red;
 }
-
+#contact label.error{
+    color: red;
+    width:50%;
+}
+.openLink{
+    background-color: rgb(20, 101, 192);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 3px 8px;
+    margin: 0px 6px;
+    text-decoration: none;
+}
 legend{
     float: left;
     width: 150px;
@@ -61,7 +74,8 @@ select{
     width: 200px;
     height: 34px;
 }
-button{
+button,
+input[type=submit]{
     margin: 40px 20px;
     padding: 8px 20px;
     border-radius: 3px;

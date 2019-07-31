@@ -33,19 +33,16 @@ function displayResults(){
     // Condition to display the risk level message
     var risksSum = risks.reduce((a, b) => a + b, 0);
     if (risksSum >= 25){
-        alert("high");
         document.getElementById("high").style.display = "block";
         document.getElementById("medium").style.display = "none";
         document.getElementById("low").style.display = "none";
     }
     else if(risksSum >= 16){
-        alert("med");
         document.getElementById("medium").style.display = "block";
         document.getElementById("high").style.display = "none";
         document.getElementById("low").style.display = "none";
     }
     else{
-        alert("low");
         document.getElementById("low").style.display = "block";
         document.getElementById("high").style.display = "none";
         document.getElementById("medium").style.display = "none";

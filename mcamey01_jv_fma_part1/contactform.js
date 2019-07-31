@@ -27,17 +27,19 @@ function submitForm(){
 	if(fnameCheck == false || lnameCheck == false || titleCheck == false || hanCheck == false || emailCheck == false || phoneCheck == false ){
 		document.getElementById('onclickError').innerHTML = " * There are errors in the form";
 		return false;
+    }else{
+        alert("Form Successfully Submitted");
     }
 }
 
-// Field Validation
+// --- Field Validation --- //
+// First Name Validator: last name format and populates default text.
 function checkFirstName(){
     var valid = true;
     var InputDefault = document.getElementById("FirstName");
     var defaultTxt = " Enter First Name";
     InputDefault.value = defaultTxt;
-    InputDefault.style.color = "#cccccc";
-    InputDefault.style.fontStyle = "italic";
+    InputDefault.style.color = "#777";
     InputDefault.onfocus = function() {
         if (this.value === defaultTxt) {
           this.value = "";
@@ -47,10 +49,10 @@ function checkFirstName(){
         }
     }
     InputDefault.onblur = function() {
-        if (this.value=="") {
+        var fnameRegEx = /^\S+[a-zA-Z ]*\D+$/;
+        if ( (this.value=="") |(!fnameRegEx.test(this.value)) ) {
           this.value = defaultTxt;
-          this.style.color = "#cccccc";
-          this.style.fontStyle = "italic";
+          this.style.color = "#777";
           document.getElementById('FirstNameError').innerHTML = ' * You must enter a valid First Name';
 		  valid = false;
         }
@@ -58,10 +60,12 @@ function checkFirstName(){
     } 
 }
 
+// Last Name Validator: last name format.
 function checkLastName(){
 	var valid = true;
-    var lnameInput = document.getElementById("LastName");
-	if(lnameInput.value==""){
+    var lnameInput = document.getElementById("LastName").value;
+    var lnameRegEx = /^\S+[a-zA-Z ]*\D+$/;
+	if((lnameInput=="") || (!lnameRegEx.test(lnameInput))){
 		document.getElementById('LastNameError').innerHTML = ' * You must enter a valid Last Name';
 		valid = false;
 	}
@@ -115,11 +119,13 @@ function checkPhone(){
     return valid;
 }
 
+// Clear Errors
 function clearError(){
 	document.getElementById(this.id + 'Error').innerHTML = "&nbsp;";
 	document.getElementById('onclickError').innerHTML = "&nbsp;";
 }
 
+// Display and hide tooltip
 function toolTipDisplay() {           
     document.getElementById('mark').onmouseover = function() {
     var toolTip = document.getElementById('tooltip');
@@ -130,6 +136,3 @@ function toolTipDisplay() {
     toolTip.style.display='none';
     } 	
   }	
-
-
-
