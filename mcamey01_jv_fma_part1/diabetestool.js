@@ -32,9 +32,9 @@ function displayResults(){
     // Setup Risks labels
     var risksLabel = [];
     risksLabel[0] = "your Age";
-    risksLabel[1] = "your bmi";
-    risksLabel[2] = "your diabetes";
-    risksLabel[3] = "your diet";
+    risksLabel[1] = "your BMI";
+    risksLabel[2] = "your Diabetes";
+    risksLabel[3] = "your Diet";
 
     // Store labels >=10 into a new array to organise them.
     var highestRisk = [];
@@ -54,7 +54,7 @@ function displayResults(){
         var lastLabel = highestRisk[highestRisk.length - 1];
         var setLast = lastSeparatorTxt.concat(lastLabel);
         highestRisk.splice(findLast, 1, setLast);
-        document.getElementById("mainRisks").innerHTML = highestRisk.join(separatorTxt);;
+        document.getElementById("mainRisks").innerHTML = highestRisk.join(separatorTxt);
     }
 }
 
