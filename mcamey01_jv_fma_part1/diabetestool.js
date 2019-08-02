@@ -40,6 +40,7 @@ function displayResults(){
     var highestRisk = [];
     var separatorTxt =  ', ';
     var lastSeparatorTxt =  " and ";
+    
     // iteration to check which risk is grater or equal to ten 
     for(i = 0; i < risks.length; i++){
         if(risks[i]>=10){
